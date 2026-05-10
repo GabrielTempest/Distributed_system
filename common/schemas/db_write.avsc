@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "name": "DbWrite",
+  "namespace": "com.ews.common",
+  "fields": [
+    {"name": "write_id", "type": "string"},
+    {"name": "timestamp", "type": "string"},
+    {"name": "table", "type": "string"},
+    {"name": "operation", "type": "string"},
+    {"name": "payload", "type": "string"}
+  ]
+}
