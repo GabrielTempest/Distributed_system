@@ -1,0 +1,14 @@
+{
+  "type": "record",
+  "name": "Alert",
+  "namespace": "com.ews.common",
+  "fields": [
+    {"name": "alert_id", "type": "string"},
+    {"name": "area_id", "type": "string"},
+    {"name": "timestamp", "type": "string"},
+    {"name": "disaster_type", "type": "string"},
+    {"name": "alert_level", "type": "string"},
+    {"name": "title", "type": "string"},
+    {"name": "message", "type": "string"}
+  ]
+}
