@@ -1,0 +1,12 @@
+{
+  "type": "enum",
+  "name": "DisasterType",
+  "namespace": "com.ews.enums",
+  "symbols": [
+    "FLOOD",
+    "TYPHOON",
+    "LANDSLIDE",
+    "WILDFIRE",
+    "HEATWAVE"
+  ]
+}

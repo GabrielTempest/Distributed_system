@@ -1,0 +1,12 @@
+{
+  "type": "enum",
+  "name": "AlertLevel",
+  "namespace": "com.ews.enums",
+  "symbols": [
+    "INFO",
+    "LOW",
+    "MEDIUM",
+    "HIGH",
+    "CRITICAL"
+  ]
+}

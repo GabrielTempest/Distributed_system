@@ -1,27 +1,16 @@
 {
   "type": "record",
   "name": "AreaProcessingResult",
-  "namespace": "com.ews.common",
+  "namespace": "com.ews",
   "fields": [
     {"name": "area_id", "type": "string"},
     {"name": "timestamp", "type": "string"},
-    {"name": "disaster_type", "type": "string"},
-    {"name": "current_average_measurement", "type": {
-      "type": "record", "name": "AverageMeasurement",
-      "fields": [
-        {"name": "value", "type": "double"},
-        {"name": "unit", "type": "string"},
-        {"name": "confidence", "type": "double", "default": 0.0}
-      ]
-    }},
-    {"name": "forecast_average_measurement", "type": "AverageMeasurement"},
-    {"name": "alert_level", "type": "string"},
+    {"name": "disaster_type", "type": "com.ews.enums.DisasterType"},
+    {"name": "measurement_type", "type": "com.ews.enums.MeasurementType"},
+    {"name": "current_average_measurement", "type": "com.ews.common.Measurement"},
+    {"name": "forecast_average_measurement", "type": "com.ews.common.Measurement"},
+    {"name": "alert_level", "type": "com.ews.enums.AlertLevel"},
     {"name": "anomaly_sensors", "type": {"type": "array", "items": "string"}},
-    {"name": "processor_info", "type": {
-      "type": "record", "name": "ProcessorInfo",
-      "fields": [
-        {"name": "model_version", "type": "string"}
-      ]
-    }}
+    {"name": "processor_info", "type": "com.ews.common.ProcessorInfo"}
   ]
 }

@@ -1,0 +1,9 @@
+{
+  "type": "record",
+  "name": "Location",
+  "namespace": "com.ews.common",
+  "fields": [
+    {"name": "latitude", "type": "double"},
+    {"name": "longitude", "type": "double"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "type": "record",
+  "name": "Measurement",
+  "namespace": "com.ews.common",
+  "fields": [
+    {"name": "value", "type": "double"},
+    {"name": "unit", "type": "string"},
+    {"name": "confidence", "type": ["null", "double"], "default": null}
+  ]
+}

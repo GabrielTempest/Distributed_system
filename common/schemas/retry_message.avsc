@@ -1,7 +1,7 @@
 {
   "type": "record",
   "name": "RetryMessage",
-  "namespace": "com.ews.common",
+  "namespace": "com.ews",
   "fields": [
     {"name": "retry_id", "type": "string"},
     {"name": "original_topic", "type": "string"},

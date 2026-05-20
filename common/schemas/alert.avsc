@@ -1,13 +1,15 @@
 {
   "type": "record",
   "name": "Alert",
-  "namespace": "com.ews.common",
+  "namespace": "com.ews",
   "fields": [
     {"name": "alert_id", "type": "string"},
     {"name": "area_id", "type": "string"},
     {"name": "timestamp", "type": "string"},
-    {"name": "disaster_type", "type": "string"},
-    {"name": "alert_level", "type": "string"},
+    {"name": "disaster_type", "type": "com.ews.enums.DisasterType"},
+    {"name": "measurement_type", "type": "com.ews.enums.MeasurementType"},
+    {"name": "forecast_measurement", "type": "com.ews.common.Measurement"},
+    {"name": "alert_level", "type": "com.ews.enums.AlertLevel"},
     {"name": "title", "type": "string"},
     {"name": "message", "type": "string"}
   ]

@@ -1,35 +1,17 @@
 {
   "type": "record",
   "name": "SensorReading",
-  "namespace": "com.ews.common",
+  "namespace": "com.ews",
   "fields": [
     {"name": "sensor_id", "type": "string"},
     {"name": "area_id", "type": "string"},
     {"name": "timestamp", "type": "string"},
-    {"name": "disaster_type", "type": "string"},
-    {"name": "current_measurement", "type": {
-      "type": "record", "name": "Measurement",
-      "fields": [
-        {"name": "value", "type": "double"},
-        {"name": "unit", "type": "string"},
-        {"name": "confidence", "type": ["null", "double"], "default": null}
-      ]
-    }},
-    {"name": "forecast_measurement", "type": "Measurement"},
-    {"name": "alert_level", "type": "string"},
-    {"name": "location", "type": {
-      "type": "record", "name": "Location",
-      "fields": [
-        {"name": "latitude", "type": "double"},
-        {"name": "longitude", "type": "double"}
-      ]
-    }},
-    {"name": "metadata", "type": {
-      "type": "record", "name": "SensorMetadata",
-      "fields": [
-        {"name": "battery", "type": "int"},
-        {"name": "signal_strength", "type": "int"}
-      ]
-    }}
+    {"name": "disaster_type", "type": "com.ews.enums.DisasterType"},
+    {"name": "measurement_type", "type": "com.ews.enums.MeasurementType"},
+    {"name": "current_measurement", "type": "com.ews.common.Measurement"},
+    {"name": "forecast_measurement", "type": "com.ews.common.Measurement"},
+    {"name": "alert_level", "type": "com.ews.enums.AlertLevel"},
+    {"name": "location", "type": "com.ews.common.Location"},
+    {"name": "metadata", "type": "com.ews.common.SensorMetadata"}
   ]
 }

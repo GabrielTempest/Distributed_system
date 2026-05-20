@@ -1,23 +1,17 @@
 from dataclasses import dataclass, field
+from enum import Enum
 from typing import List
+from pydantic import BaseModel
+from common.models import DisasterType, Measurement, AlertLevel, ProcessorInfo
+
 
 @dataclass
-class Measurement:
-    value: float
-    unit: str
-    confidence: float = 0.0
-
-@dataclass
-class ProcessorInfo:
-    model_version: str
-
-@dataclass
-class AreaProcessingResult:
+class AreaProcessingResult(BaseModel):
     area_id: str
     timestamp: str
-    disaster_type: str
+    disaster_type: DisasterType
     current_average_measurement: Measurement
     forecast_average_measurement: Measurement
-    alert_level: str          # INFO, LOW, MEDIUM, HIGH, CRITICAL
+    alert_level: AlertLevel
     anomaly_sensors: List[str]
     processor_info: ProcessorInfo

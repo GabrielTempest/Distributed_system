@@ -1,0 +1,8 @@
+{
+  "type": "record",
+  "name": "ProcessorInfo",
+  "namespace": "com.ews.common",
+  "fields": [
+    {"name": "model_version", "type": "string"}
+  ]
+}

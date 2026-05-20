@@ -1,20 +1,17 @@
 from dataclasses import dataclass, field
 from typing import List
+from pydantic import BaseModel
+from common.models import Measurement, DisasterType, AlertLevel
 
 @dataclass
-class Measurement:
-    value: float
-    unit: str
-
-@dataclass
-class Alert:
+class Alert(BaseModel):
     alert_id: str
     area_id: str
     timestamp: str
-    disaster_type: str
+    disaster_type: DisasterType
     forecast_measurement: Measurement
     confidence_score: float
-    alert_level: str          # INFO, LOW, MEDIUM, HIGH, CRITICAL
+    alert_level: AlertLevel
     title: str
     message: str
     recommended_actions: List[str]
