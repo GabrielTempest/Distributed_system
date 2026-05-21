@@ -4,9 +4,8 @@
   "namespace": "com.ews.enums",
   "symbols": [
     "INFO",
-    "LOW",
-    "MEDIUM",
-    "HIGH",
+    "MONITORING",
+    "WARNING",
     "CRITICAL"
   ]
 }

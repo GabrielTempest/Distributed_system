@@ -4,9 +4,6 @@
   "namespace": "com.ews.enums",
   "symbols": [
     "FLOOD",
-    "TYPHOON",
-    "LANDSLIDE",
-    "WILDFIRE",
-    "HEATWAVE"
+    "TYPHOON"
   ]
 }

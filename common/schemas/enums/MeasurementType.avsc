@@ -5,8 +5,6 @@
   "symbols": [
     "WATER_LEVEL",
     "RAINFALL",
-    "WIND_SPEED",
-    "SOIL_MOISTURE",
-    "TEMPERATURE",
+    "WIND_SPEED"
   ]
 }
