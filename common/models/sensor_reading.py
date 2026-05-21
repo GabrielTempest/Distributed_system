@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 from typing import List
 from pydantic import BaseModel
-from common.models import DisasterType, MeasurementType, AlertLevel, Measurement, Location, SensorMetadata
+from common.models import DisasterType, AlertLevel, Measurement, Location, SensorMetadata
 
 @dataclass
 class SensorReading(BaseModel):

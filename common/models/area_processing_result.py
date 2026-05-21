@@ -1,5 +1,4 @@
-from dataclasses import dataclass, field
-from enum import Enum
+from dataclasses import dataclass
 from typing import List
 from pydantic import BaseModel
 from common.models import DisasterType, Measurement, AlertLevel, ProcessorInfo

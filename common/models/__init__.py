@@ -7,7 +7,6 @@ from .custom_datatype import (
 
 from .enums import (
     DisasterType,
-    MeasurementType,
     AlertLevel
 )
 

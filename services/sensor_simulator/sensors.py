@@ -1,17 +1,9 @@
 import random
 import uuid
 
-from datetime import datetime, timezone, timedelta
+from datetime import timezone, timedelta
 
-from common.models import (
-    SensorReading,
-    DisasterType,
-    MeasurementType,
-    AlertLevel,
-    Measurement,
-    Location,
-    SensorMetadata
-)
+from common.models import DisasterType
 from common.config import AREA
 
 # Global sensor registry
@@ -22,8 +14,6 @@ SENSORS = {}
 def create_sensor(
     area: str,
     disaster_type: DisasterType,
-    measurement_type: MeasurementType,
-    measurement_unit: str,
     latitude: float = None,
     longitude: float = None,
     battery: int = None
@@ -42,8 +32,6 @@ def create_sensor(
     SENSORS[sensor_id] = {
         "area": area,
         "disaster_type": disaster_type,
-        "measurement_type": measurement_type,
-        "measurement_unit": measurement_unit,
         "lat": latitude,
         "lon": longitude,
         "timezone": timezone(timedelta(hours=AREA[area][2])),

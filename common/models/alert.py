@@ -1,7 +1,7 @@
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import List
 from pydantic import BaseModel
-from common.models import Measurement, DisasterType, AlertLevel
+from common.models import DisasterType, AlertLevel
 
 @dataclass
 class Alert(BaseModel):
