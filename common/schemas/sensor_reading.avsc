@@ -7,9 +7,7 @@
     {"name": "area_id", "type": "string"},
     {"name": "timestamp", "type": "string"},
     {"name": "disaster_type", "type": "com.ews.enums.DisasterType"},
-    {"name": "measurement_type", "type": "com.ews.enums.MeasurementType"},
-    {"name": "current_measurement", "type": "com.ews.common.Measurement"},
-    {"name": "forecast_measurement", "type": "com.ews.common.Measurement"},
+    {"name": "current_measurement", "type": {"type": "array", "items": "com.ews.common.Measurement"}},
     {"name": "alert_level", "type": "com.ews.enums.AlertLevel"},
     {"name": "location", "type": "com.ews.common.Location"},
     {"name": "metadata", "type": "com.ews.common.SensorMetadata"}

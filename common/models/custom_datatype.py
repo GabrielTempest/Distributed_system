@@ -5,9 +5,9 @@ from pydantic import BaseModel
 
 @dataclass
 class Measurement(BaseModel):
+    measurement_type: str
     value: float
     unit: str
-    confidence: Optional[float] = None
 
 @dataclass
 class Location(BaseModel):
@@ -18,7 +18,6 @@ class Location(BaseModel):
 class SensorMetadata(BaseModel):
     battery: int
     signal_strength: int
-    firmware_version: str
 
 @dataclass
 class ProcessorInfo(BaseModel):

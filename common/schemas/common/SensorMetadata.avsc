@@ -4,7 +4,6 @@
   "namespace": "com.ews.common",
   "fields": [
     {"name": "battery", "type": "int"},
-    {"name": "signal_strength", "type": "int"},
-    {"name": "firmware_version", "type": "string"}
+    {"name": "signal_strength", "type": "int"}
   ]
 }

@@ -3,8 +3,8 @@
   "name": "Measurement",
   "namespace": "com.ews.common",
   "fields": [
+    {"name": "measurement_type", "type": "string"},
     {"name": "value", "type": "double"},
-    {"name": "unit", "type": "string"},
-    {"name": "confidence", "type": ["null", "double"], "default": null}
+    {"name": "unit", "type": "string"}
   ]
 }

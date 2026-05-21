@@ -10,8 +10,6 @@ class AreaProcessingResult(BaseModel):
     area_id: str
     timestamp: str
     disaster_type: DisasterType
-    current_average_measurement: Measurement
-    forecast_average_measurement: Measurement
+    current_average_measurement: List[Measurement]
     alert_level: AlertLevel
-    anomaly_sensors: List[str]
     processor_info: ProcessorInfo

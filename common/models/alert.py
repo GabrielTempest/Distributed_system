@@ -9,8 +9,6 @@ class Alert(BaseModel):
     area_id: str
     timestamp: str
     disaster_type: DisasterType
-    forecast_measurement: Measurement
-    confidence_score: float
     alert_level: AlertLevel
     title: str
     message: str
